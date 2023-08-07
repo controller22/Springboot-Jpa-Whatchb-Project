@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{layouts/default_layout}"
+>
+  <!-- index.html 고유 CSS 추가 -->
+  <th:block layout:fragment="css">
+    <!--    <link rel="stylesheet" th:href="@{/css/page/home.css}" >-->
+  </th:block>
+  <!-- index.html 고유 스크립트 추가 -->
+  <th:block layout:fragment="script">
+    <!--    <script th:src="@{/js/page/home.js}"></script>-->
+  </th:block>
+
+  <!-- Content -->
+  <div layout:fragment="content">
+    <div id="page-wrapper">
+      <!-- 사이드바 -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <a class="navbar-brand" href="#" id="logo" >
+            <img src="/img/logo.png" alt="" width="100" height="30" id="image" >
+            
+        </a>
+          <li><a href="#">📺 비디오</a></li>
+          <li><a href="#">🔎 찾기</a></li>
+          <li><a href="#">⭐ 평가</a></li>
+          <li><a href="#">💾 보관함</a></li>
+        </ul>
+      </div>
+      <!-- /사이드바 -->
+
+      <!-- 본문 -->
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <h2>홈</h2>
+        </div>
+        <img src="/img/main.png" alt="" id="main">
+          <hr>
+      </div>
+      <div id="post">
+      <h5>
+        왓챠 최신작
+      </h3>
+      <div id="posts">
+        <img src="/img/chainsoman.jpg" alt="" class="img">
+        <img src="/img/chainsoman.jpg" alt="" class="img">
+        <img src="/img/chainsoman.jpg" alt="" class="img">
+        <img src="/img/chainsoman.jpg" alt="" class="img">
+        <img src="/img/chainsoman.jpg" alt="" class="img">
+        <img src="/img/chainsoman.jpg" alt="" class="img">
+        <img src="/img/chainsoman.jpg" alt="" class="img">
+        <img src="/img/chainsoman.jpg" alt="" class="img">
+      </div>
+    </div>
+      <!-- /본문 -->
+    </div>
+    
+    
+  </div>
+</html>
+
+</html>

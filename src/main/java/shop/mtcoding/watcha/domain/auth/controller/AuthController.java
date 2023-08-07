@@ -5,9 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class AuthController {
-
-    @GetMapping("/")
-    public String login() {
+    @GetMapping("/auth/loginForm")
+    public String loginForm() {
         return "auth/login";
+    } 
+    @GetMapping("/auth/joinForm")
+    public String joinForm() {
+        return "auth/join";
     }
+    
 }
